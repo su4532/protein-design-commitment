@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "model": "nvidia/NV-Proteina-Complexa-Protein-Target-160M-v1",
+  "sampler_steps": 400,
+  "capture_steps": [10, 25, 50, 75, 100, 150, 200, 250, 300, 350],
+  "published_capture_steps": [10, 25, 50, 75, 100, 200, 300],
+  "design": {
+    "roots": 16,
+    "children_per_root": 8,
+    "completions_per_child": 8,
+    "folds_per_cell": 1024,
+    "seed": 42
+  },
+  "qualities": [
+    "fold_identity",
+    "structural_confidence",
+    "designability",
+    "interface_quality"
+  ],
+  "independent_unit": "Foldseek structural cluster",
+  "bootstrap_draws": 10000,
+  "external_dependencies": {
+    "complexa_repository": "https://github.com/NVIDIA-Digital-Bio/proteina-complexa",
+    "complexa_commit": "916eaaedce5b",
+    "folding": "AlphaFold/ColabDesign public interface",
+    "redesign": "ProteinMPNN public interface"
+  }
+}

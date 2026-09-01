@@ -1,0 +1,704 @@
+{
+ "floor_step": 10.0,
+ "gap_scale_sweep": {
+  "crossings": {
+   "gap_scale_own": {
+    "largest_compatible_gap_scale": 0.6,
+    "largest_compatible_separation_steps": 27.120653731910508,
+    "smallest_excluded_gap_scale": 0.7,
+    "smallest_excluded_separation_steps": 31.640762687228925
+   },
+   "gap_scale_uniform": {
+    "largest_compatible_gap_scale": 0.2,
+    "largest_compatible_separation_steps": 13.9987355214574,
+    "smallest_excluded_gap_scale": 0.3,
+    "smallest_excluded_separation_steps": 20.998103282186097
+   },
+   "gap_scale_varying": {
+    "largest_compatible_gap_scale": 0.3,
+    "largest_compatible_separation_steps": 20.998103282186097,
+    "smallest_excluded_gap_scale": 0.4,
+    "smallest_excluded_separation_steps": 27.9974710429148
+   }
+  },
+  "description": "Shared-order worlds whose between-quality separation is the pooled separation shrunk by a factor c. c = 1 reproduces the pooled gaps on each target's own level; c = 0 has all four qualities settling together, so every estimated order is noise. gap_scale_varying draws each target's factor from U(0, 2c) per replicate, giving target-specific separations with the same common order. gap_scale_own instead shrinks each target's own noise-deconvolved deviations, re-sorted into the pooled order, so the gap shape stays target-specific at every scale; its separation_steps are measured against the median per-target range of those deviations.",
+  "families": {
+   "gap_scale_own": [
+    {
+     "gap_scale": 0.0,
+     "median_distinct_orders": 13.0,
+     "median_w": 0.04265927977839335,
+     "p05_w": 0.006094182825484765,
+     "p95_w": 0.13795013850415513,
+     "p_distinct_ge_observed": 0.32,
+     "p_w_le_observed": 0.88565,
+     "separation_steps": 0.0
+    },
+    {
+     "gap_scale": 0.1,
+     "median_distinct_orders": 13.0,
+     "median_w": 0.06481994459833795,
+     "p05_w": 0.010526315789473684,
+     "p95_w": 0.1889196675900277,
+     "p_distinct_ge_observed": 0.25385,
+     "p_w_le_observed": 0.73,
+     "separation_steps": 4.520108955318419
+    },
+    {
+     "gap_scale": 0.2,
+     "median_distinct_orders": 12.0,
+     "median_w": 0.10470914127423822,
+     "p05_w": 0.022714681440443214,
+     "p95_w": 0.25429362880886425,
+     "p_distinct_ge_observed": 0.16385,
+     "p_w_le_observed": 0.4983,
+     "separation_steps": 9.040217910636837
+    },
+    {
+     "gap_scale": 0.3,
+     "median_distinct_orders": 12.0,
+     "median_w": 0.14238227146814406,
+     "p05_w": 0.04044321329639889,
+     "p95_w": 0.3031024930747914,
+     "p_distinct_ge_observed": 0.09985,
+     "p_w_le_observed": 0.31285,
+     "separation_steps": 13.560326865955254
+    },
+    {
+     "gap_scale": 0.4,
+     "median_distinct_orders": 11.0,
+     "median_w": 0.17340720221606648,
+     "p05_w": 0.05817174515235457,
+     "p95_w": 0.33739612188365653,
+     "p_distinct_ge_observed": 0.0616,
+     "p_w_le_observed": 0.1942,
+     "separation_steps": 18.080435821273674
+    },
+    {
+     "gap_scale": 0.5,
+     "median_distinct_orders": 11.0,
+     "median_w": 0.20221606648199447,
+     "p05_w": 0.0781163434903047,
+     "p95_w": 0.3706371191135734,
+     "p_distinct_ge_observed": 0.03325,
+     "p_w_le_observed": 0.11015,
+     "separation_steps": 22.60054477659209
+    },
+    {
+     "gap_scale": 0.6,
+     "median_distinct_orders": 11.0,
+     "median_w": 0.22326869806094182,
+     "p05_w": 0.09473684210526316,
+     "p95_w": 0.39501385041551246,
+     "p_distinct_ge_observed": 0.01925,
+     "p_w_le_observed": 0.06765,
+     "separation_steps": 27.120653731910508
+    },
+    {
+     "gap_scale": 0.7,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.24210526315789474,
+     "p05_w": 0.11246537396121883,
+     "p95_w": 0.4182825484764543,
+     "p_distinct_ge_observed": 0.0093,
+     "p_w_le_observed": 0.03935,
+     "separation_steps": 31.640762687228925
+    },
+    {
+     "gap_scale": 0.8,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.2598337950138504,
+     "p05_w": 0.1257617728531856,
+     "p95_w": 0.4404432132963989,
+     "p_distinct_ge_observed": 0.0053,
+     "p_w_le_observed": 0.02495,
+     "separation_steps": 36.16087164254735
+    },
+    {
+     "gap_scale": 0.9,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.2753462603878116,
+     "p05_w": 0.13795013850415513,
+     "p95_w": 0.45706371191135736,
+     "p_distinct_ge_observed": 0.00275,
+     "p_w_le_observed": 0.01445,
+     "separation_steps": 40.68098059786576
+    },
+    {
+     "gap_scale": 1.0,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.2886426592797784,
+     "p05_w": 0.1490304709141274,
+     "p95_w": 0.46371191135734074,
+     "p_distinct_ge_observed": 0.0018,
+     "p_w_le_observed": 0.00995,
+     "separation_steps": 45.20108955318418
+    }
+   ],
+   "gap_scale_uniform": [
+    {
+     "gap_scale": 0.0,
+     "median_distinct_orders": 13.0,
+     "median_w": 0.04155124653739612,
+     "p05_w": 0.006094182825484765,
+     "p95_w": 0.13795013850415513,
+     "p_distinct_ge_observed": 0.32105,
+     "p_w_le_observed": 0.8847,
+     "separation_steps": 0.0
+    },
+    {
+     "gap_scale": 0.1,
+     "median_distinct_orders": 12.0,
+     "median_w": 0.07700831024930747,
+     "p05_w": 0.013850415512465374,
+     "p95_w": 0.2155124653739612,
+     "p_distinct_ge_observed": 0.21945,
+     "p_w_le_observed": 0.65255,
+     "separation_steps": 6.9993677607287
+    },
+    {
+     "gap_scale": 0.2,
+     "median_distinct_orders": 11.0,
+     "median_w": 0.16454293628808864,
+     "p05_w": 0.049307479224376734,
+     "p95_w": 0.33518005540166207,
+     "p_distinct_ge_observed": 0.0807,
+     "p_w_le_observed": 0.2279,
+     "separation_steps": 13.9987355214574
+    },
+    {
+     "gap_scale": 0.3,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.2664819944598338,
+     "p05_w": 0.12022160664819945,
+     "p95_w": 0.4448753462603878,
+     "p_distinct_ge_observed": 0.01425,
+     "p_w_le_observed": 0.0332,
+     "separation_steps": 20.998103282186097
+    },
+    {
+     "gap_scale": 0.4,
+     "median_distinct_orders": 9.0,
+     "median_w": 0.3573407202216066,
+     "p05_w": 0.19335180055401663,
+     "p95_w": 0.5346260387811634,
+     "p_distinct_ge_observed": 0.00135,
+     "p_w_le_observed": 0.0028,
+     "separation_steps": 27.9974710429148
+    },
+    {
+     "gap_scale": 0.5,
+     "median_distinct_orders": 8.0,
+     "median_w": 0.4371191135734072,
+     "p05_w": 0.2709141274238227,
+     "p95_w": 0.6,
+     "p_distinct_ge_observed": 0.0002,
+     "p_w_le_observed": 0.00015,
+     "separation_steps": 34.9968388036435
+    },
+    {
+     "gap_scale": 0.6,
+     "median_distinct_orders": 7.0,
+     "median_w": 0.5013850415512465,
+     "p05_w": 0.34182825484764545,
+     "p95_w": 0.6498614958448753,
+     "p_distinct_ge_observed": 5e-05,
+     "p_w_le_observed": 0.0,
+     "separation_steps": 41.996206564372194
+    },
+    {
+     "gap_scale": 0.7,
+     "median_distinct_orders": 7.0,
+     "median_w": 0.5512465373961218,
+     "p05_w": 0.3972299168975069,
+     "p95_w": 0.6897506925207756,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0,
+     "separation_steps": 48.9955743251009
+    },
+    {
+     "gap_scale": 0.8,
+     "median_distinct_orders": 6.0,
+     "median_w": 0.5944598337950139,
+     "p05_w": 0.44598337950138506,
+     "p95_w": 0.7196675900277009,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0,
+     "separation_steps": 55.9949420858296
+    },
+    {
+     "gap_scale": 0.9,
+     "median_distinct_orders": 6.0,
+     "median_w": 0.6277008310249308,
+     "p05_w": 0.48808864265927976,
+     "p95_w": 0.7429362880886426,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0,
+     "separation_steps": 62.9943098465583
+    },
+    {
+     "gap_scale": 1.0,
+     "median_distinct_orders": 6.0,
+     "median_w": 0.6542936288088642,
+     "p05_w": 0.5213296398891967,
+     "p95_w": 0.7639889196675901,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0,
+     "separation_steps": 69.993677607287
+    }
+   ],
+   "gap_scale_varying": [
+    {
+     "gap_scale": 0.0,
+     "median_distinct_orders": 13.0,
+     "median_w": 0.04155124653739612,
+     "p05_w": 0.006094182825484765,
+     "p95_w": 0.13573407202216067,
+     "p_distinct_ge_observed": 0.3144,
+     "p_w_le_observed": 0.8837,
+     "separation_steps": 0.0
+    },
+    {
+     "gap_scale": 0.1,
+     "median_distinct_orders": 12.0,
+     "median_w": 0.07257617728531857,
+     "p05_w": 0.011634349030470914,
+     "p95_w": 0.2110803324099723,
+     "p_distinct_ge_observed": 0.22685,
+     "p_w_le_observed": 0.6749,
+     "separation_steps": 6.9993677607287
+    },
+    {
+     "gap_scale": 0.2,
+     "median_distinct_orders": 12.0,
+     "median_w": 0.14681440443213298,
+     "p05_w": 0.03822714681440443,
+     "p95_w": 0.3174515235457064,
+     "p_distinct_ge_observed": 0.0938,
+     "p_w_le_observed": 0.2977,
+     "separation_steps": 13.9987355214574
+    },
+    {
+     "gap_scale": 0.3,
+     "median_distinct_orders": 11.0,
+     "median_w": 0.2221606648199446,
+     "p05_w": 0.08033240997229917,
+     "p95_w": 0.40941828254847645,
+     "p_distinct_ge_observed": 0.0308,
+     "p_w_le_observed": 0.0979,
+     "separation_steps": 20.998103282186097
+    },
+    {
+     "gap_scale": 0.4,
+     "median_distinct_orders": 10.0,
+     "median_w": 0.2886426592797784,
+     "p05_w": 0.12465373961218837,
+     "p95_w": 0.48808864265927976,
+     "p_distinct_ge_observed": 0.0094,
+     "p_w_le_observed": 0.02865,
+     "separation_steps": 27.9974710429148
+    },
+    {
+     "gap_scale": 0.5,
+     "median_distinct_orders": 9.0,
+     "median_w": 0.34847645429362883,
+     "p05_w": 0.1667590027700831,
+     "p95_w": 0.5434903047091413,
+     "p_distinct_ge_observed": 0.0024,
+     "p_w_le_observed": 0.00885,
+     "separation_steps": 34.9968388036435
+    },
+    {
+     "gap_scale": 0.6,
+     "median_distinct_orders": 9.0,
+     "median_w": 0.39058171745152354,
+     "p05_w": 0.20886426592797783,
+     "p95_w": 0.585595567867036,
+     "p_distinct_ge_observed": 0.00105,
+     "p_w_le_observed": 0.0028,
+     "separation_steps": 41.996206564372194
+    },
+    {
+     "gap_scale": 0.7,
+     "median_distinct_orders": 8.0,
+     "median_w": 0.4326869806094183,
+     "p05_w": 0.23988919667590028,
+     "p95_w": 0.6210526315789474,
+     "p_distinct_ge_observed": 0.00035,
+     "p_w_le_observed": 0.0009,
+     "separation_steps": 48.9955743251009
+    },
+    {
+     "gap_scale": 0.8,
+     "median_distinct_orders": 8.0,
+     "median_w": 0.46703601108033244,
+     "p05_w": 0.26869806094182824,
+     "p95_w": 0.6542936288088642,
+     "p_distinct_ge_observed": 0.00015,
+     "p_w_le_observed": 0.0004,
+     "separation_steps": 55.9949420858296
+    },
+    {
+     "gap_scale": 0.9,
+     "median_distinct_orders": 7.0,
+     "median_w": 0.4925207756232687,
+     "p05_w": 0.29412742382271473,
+     "p95_w": 0.6786703601108033,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0003,
+     "separation_steps": 62.9943098465583
+    },
+    {
+     "gap_scale": 1.0,
+     "median_distinct_orders": 7.0,
+     "median_w": 0.5202216066481995,
+     "p05_w": 0.3218836565096953,
+     "p95_w": 0.7008310249307479,
+     "p_distinct_ge_observed": 0.0,
+     "p_w_le_observed": 0.0001,
+     "separation_steps": 69.993677607287
+    }
+   ]
+  },
+  "family_separation_scale": {
+   "gap_scale_own": 45.20108955318418,
+   "gap_scale_uniform": 69.993677607287,
+   "gap_scale_varying": 69.993677607287
+  },
+  "n_sim": 20000,
+  "own_separation_steps_median": 45.20108955318418,
+  "pooled_separation_steps": 69.993677607287,
+  "seed": 43
+ },
+ "max_step": 350.0,
+ "measurement_error_steps": {
+  "designability": {
+   "max_se": 76.75287080187897,
+   "mean_se": 30.56086087771001,
+   "median_se": 30.099213639014287
+  },
+  "fold_identity": {
+   "max_se": 8.557590573853176,
+   "mean_se": 4.8562800021595285,
+   "median_se": 4.584196432210965
+  },
+  "interface_quality": {
+   "max_se": 72.13565557035068,
+   "mean_se": 17.59602271130363,
+   "median_se": 13.627418434877066
+  },
+  "structural_confidence": {
+   "max_se": 27.09074025084829,
+   "mean_se": 15.069370038455357,
+   "median_se": 13.87151998006631
+  }
+ },
+ "n_sim": 20000,
+ "nulls": {
+  "common_order": {
+   "description": "every target shares the pooled order, rescaled to its own overall speed",
+   "kendall_w": {
+    "mean": 0.6041891966759002,
+    "median": 0.6044321329639889,
+    "p05": 0.4581717451523546,
+    "p95": 0.7429362880886426
+   },
+   "n_distinct_orders": {
+    "median": 6.0,
+    "p05": 4.0,
+    "p95": 8.0
+   },
+   "p_distinct_ge_observed": 0.0,
+   "p_w_le_observed": 0.0,
+   "se_inflation_sweep": [
+    {
+     "median_w": 0.6099722991689751,
+     "p_w_le_observed": 0.0,
+     "se_factor": 1.0
+    },
+    {
+     "median_w": 0.489196675900277,
+     "p_w_le_observed": 0.0,
+     "se_factor": 1.5
+    },
+    {
+     "median_w": 0.392797783933518,
+     "p_w_le_observed": 0.0014,
+     "se_factor": 2.0
+    },
+    {
+     "median_w": 0.2709141274238227,
+     "p_w_le_observed": 0.0314,
+     "se_factor": 3.0
+    },
+    {
+     "median_w": 0.1922437673130194,
+     "p_w_le_observed": 0.1454,
+     "se_factor": 4.0
+    },
+    {
+     "median_w": 0.1490304709141274,
+     "p_w_le_observed": 0.2844,
+     "se_factor": 5.0
+    },
+    {
+     "median_w": 0.10249307479224377,
+     "p_w_le_observed": 0.5182,
+     "se_factor": 7.0
+    },
+    {
+     "median_w": 0.07146814404432134,
+     "p_w_le_observed": 0.684,
+     "se_factor": 10.0
+    }
+   ]
+  },
+  "common_value": {
+   "description": "every target shares the pooled order and the pooled magnitudes",
+   "kendall_w": {
+    "mean": 0.6593450415512465,
+    "median": 0.6664819944598338,
+    "p05": 0.5213296398891967,
+    "p95": 0.7806094182825485
+   },
+   "n_distinct_orders": {
+    "median": 5.0,
+    "p05": 4.0,
+    "p95": 7.0
+   },
+   "p_distinct_ge_observed": 0.0,
+   "p_w_le_observed": 0.0,
+   "se_inflation_sweep": [
+    {
+     "median_w": 0.667590027700831,
+     "p_w_le_observed": 0.0,
+     "se_factor": 1.0
+    },
+    {
+     "median_w": 0.5368421052631579,
+     "p_w_le_observed": 0.0,
+     "se_factor": 1.5
+    },
+    {
+     "median_w": 0.43157894736842106,
+     "p_w_le_observed": 0.0002,
+     "se_factor": 2.0
+    },
+    {
+     "median_w": 0.2952908587257618,
+     "p_w_le_observed": 0.017,
+     "se_factor": 3.0
+    },
+    {
+     "median_w": 0.2155124653739612,
+     "p_w_le_observed": 0.0962,
+     "se_factor": 4.0
+    },
+    {
+     "median_w": 0.16232686980609418,
+     "p_w_le_observed": 0.2454,
+     "se_factor": 5.0
+    },
+    {
+     "median_w": 0.10914127423822714,
+     "p_w_le_observed": 0.4736,
+     "se_factor": 7.0
+    },
+    {
+     "median_w": 0.07700831024930747,
+     "p_w_le_observed": 0.6638,
+     "se_factor": 10.0
+    }
+   ]
+  },
+  "own_gaps": {
+   "description": "each target's own observed settling steps re-sorted into the pooled order, so the order is shared and every target keeps its own gaps",
+   "kendall_w": {
+    "mean": 0.5418760110803325,
+    "median": 0.542382271468144,
+    "p05": 0.37728531855955677,
+    "p95": 0.6986149584487534
+   },
+   "n_distinct_orders": {
+    "median": 7.0,
+    "p05": 5.0,
+    "p95": 9.0
+   },
+   "p_distinct_ge_observed": 0.0,
+   "p_w_le_observed": 0.0,
+   "se_inflation_sweep": [
+    {
+     "median_w": 0.5457063711911357,
+     "p_w_le_observed": 0.0,
+     "se_factor": 1.0
+    },
+    {
+     "median_w": 0.421606648199446,
+     "p_w_le_observed": 0.0002,
+     "se_factor": 1.5
+    },
+    {
+     "median_w": 0.3379501385041551,
+     "p_w_le_observed": 0.0036,
+     "se_factor": 2.0
+    },
+    {
+     "median_w": 0.24321329639889197,
+     "p_w_le_observed": 0.0548,
+     "se_factor": 3.0
+    },
+    {
+     "median_w": 0.18227146814404432,
+     "p_w_le_observed": 0.1726,
+     "se_factor": 4.0
+    },
+    {
+     "median_w": 0.1490304709141274,
+     "p_w_le_observed": 0.2764,
+     "se_factor": 5.0
+    },
+    {
+     "median_w": 0.10914127423822714,
+     "p_w_le_observed": 0.4732,
+     "se_factor": 7.0
+    },
+    {
+     "median_w": 0.0781163434903047,
+     "p_w_le_observed": 0.6524,
+     "se_factor": 10.0
+    }
+   ],
+   "separation_steps": {
+    "median_adjacent_gap": 12.925508683335106,
+    "median_target_range": 62.67284162389575,
+    "min_adjacent_gap": 0.0,
+    "min_target_range": 16.0459962361603
+   }
+  },
+  "own_gaps_deconvolved": {
+   "description": "the same, with each target's spread first shrunk to remove the part of the observed within-target spread that is measurement noise",
+   "kendall_w": {
+    "mean": 0.2940654293628809,
+    "median": 0.2886426592797784,
+    "p05": 0.1490304709141274,
+    "p95": 0.46371191135734074
+   },
+   "n_distinct_orders": {
+    "median": 10.0,
+    "p05": 7.0,
+    "p95": 12.0
+   },
+   "p_distinct_ge_observed": 0.00175,
+   "p_w_le_observed": 0.00955,
+   "se_inflation_sweep": [
+    {
+     "median_w": 0.2897506925207756,
+     "p_w_le_observed": 0.009,
+     "se_factor": 1.0
+    },
+    {
+     "median_w": 0.23988919667590028,
+     "p_w_le_observed": 0.049,
+     "se_factor": 1.5
+    },
+    {
+     "median_w": 0.20110803324099724,
+     "p_w_le_observed": 0.1132,
+     "se_factor": 2.0
+    },
+    {
+     "median_w": 0.15457063711911356,
+     "p_w_le_observed": 0.266,
+     "se_factor": 3.0
+    },
+    {
+     "median_w": 0.12243767313019391,
+     "p_w_le_observed": 0.4028,
+     "se_factor": 4.0
+    },
+    {
+     "median_w": 0.10470914127423822,
+     "p_w_le_observed": 0.4944,
+     "se_factor": 5.0
+    },
+    {
+     "median_w": 0.08254847645429363,
+     "p_w_le_observed": 0.6236,
+     "se_factor": 7.0
+    },
+    {
+     "median_w": 0.06481994459833795,
+     "p_w_le_observed": 0.7226,
+     "se_factor": 10.0
+    }
+   ],
+   "separation_steps": {
+    "median_adjacent_gap": 5.302113579605191,
+    "median_target_range": 45.20108955318418,
+    "min_adjacent_gap": 0.0,
+    "min_target_range": 0.0
+   },
+   "shrink_factors": {
+    "max": 0.9926645040433143,
+    "median": 0.7187051709471007,
+    "min": 0.0,
+    "n_targets_collapsed_to_zero": 7
+   }
+  }
+ },
+ "observed": {
+  "kendall_w": 0.10360110803324099,
+  "n_distinct_orders": 14,
+  "n_targets": 19,
+  "recomputed_kendall_w": 0.10360110803324099,
+  "recomputed_n_distinct_orders": 14
+ },
+ "pooled_t_half": {
+  "designability": 53.673868107527,
+  "fold_identity": 59.19084630761046,
+  "interface_quality": 109.05486382241463,
+  "structural_confidence": 39.06118621512763
+ },
+ "question": "Could this design distinguish 'the four qualities settle in no shared order' from 'they settle in one shared order that is measured too noisily to see'?",
+ "seed": 42,
+ "verdict": {
+  "gap_scale_crossings": {
+   "gap_scale_own": {
+    "largest_compatible_gap_scale": 0.6,
+    "largest_compatible_separation_steps": 27.120653731910508,
+    "smallest_excluded_gap_scale": 0.7,
+    "smallest_excluded_separation_steps": 31.640762687228925
+   },
+   "gap_scale_uniform": {
+    "largest_compatible_gap_scale": 0.2,
+    "largest_compatible_separation_steps": 13.9987355214574,
+    "smallest_excluded_gap_scale": 0.3,
+    "smallest_excluded_separation_steps": 20.998103282186097
+   },
+   "gap_scale_varying": {
+    "largest_compatible_gap_scale": 0.3,
+    "largest_compatible_separation_steps": 20.998103282186097,
+    "smallest_excluded_gap_scale": 0.4,
+    "smallest_excluded_separation_steps": 27.9974710429148
+   }
+  },
+  "observed_inside_both_nulls": false,
+  "observed_inside_own_gap_deconvolved_null": false,
+  "observed_inside_own_gap_null": false,
+  "own_gap_deconvolved_null_median_w": 0.2886426592797784,
+  "own_gap_deconvolved_null_p_w_le_observed": 0.00955,
+  "own_gap_null_median_w": 0.542382271468144,
+  "own_gap_null_p_w_le_observed": 0.0,
+  "reading": "The two fixed-size nulls answer a power question at one effect size: could this design have seen a shared order separated as widely as the pooled estimates? It could. The own-gap nulls impose only the order at the separations actually estimated: every target keeps its own level and its own gap magnitudes, including targets whose middle two qualities sit a few steps apart. own_gaps_deconvolved is the honest version of that, because observed within-target spread is inflated by measurement noise. What no simulation at an estimated separation can exclude is a shared order separated by much less than that; the gap-scale sweep bounds those worlds instead, and within these families shared orders separated by at least smallest_excluded_separation_steps are excluded. Two limits apply to all of it: the ordered truths are plug-in constructions from the observed estimates, not a profile over every per-target truth compatible with a common order, and each target's four qualities are perturbed independently at their marginal standard errors while the source bootstrap resamples the four together. These are therefore conditional sensitivity results, not an exclusion of the composite hypothesis in general.",
+  "se_inflation_needed": {
+   "common_order": 4.0,
+   "common_value": 4.0,
+   "max_factor_tested": 10.0,
+   "note": "null means no tested inflation up to max_factor_tested made the observed Kendall's W ordinary under a shared order",
+   "own_gaps": 3.0,
+   "own_gaps_deconvolved": 2.0
+  },
+  "shared_order_null_median_w": 0.6664819944598338,
+  "shared_order_null_median_w_generous": 0.6044321329639889
+ }
+}

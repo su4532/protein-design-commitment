@@ -1,0 +1,45 @@
+{
+  "action-seven": {
+    "rotations": 60,
+    "same_group_gain": 0.034416238348454274,
+    "winner_curse_difference": 0.02971059389752291
+  },
+  "action-ten": {
+    "criterion_met": false,
+    "gain_hi": 0.07091382571490529,
+    "gain_lo": -0.06789027883144928,
+    "gain_mean": 0.002058739345112937
+  },
+  "adaptive-selection": {
+    "assessment": "unresolved",
+    "cluster_A": 0.00664728895442342,
+    "cluster_O": 0.041177673459206095,
+    "joint_A": 0.0020587393451129365,
+    "joint_O": 0.029411387248362113,
+    "nested_A": 0.002217497652862221,
+    "nested_O": 0.03041475887596607
+  },
+  "capture-core": {
+    "cells": 133,
+    "published_capture_steps": 7,
+    "published_fold_readability_peak": 0.6650821472123152,
+    "root_share_min": 1.0
+  },
+  "capture-grid": {
+    "cells": 190,
+    "cluster_cv_gap": 0.5927918535154422,
+    "distinct_orders": 14,
+    "kendall_w": 0.10360110803324099
+  },
+  "paper-assembly": {
+    "figure_count": 9,
+    "order_null_observed_w": 0.10360110803324099,
+    "table_count": 8,
+    "table_rows": 62
+  },
+  "scoring-sensitivity": {
+    "cells_excluding_zero": 12,
+    "continuous_minus_categorical_cv": -0.029943613791161616,
+    "estimator_cells": 14
+  }
+}

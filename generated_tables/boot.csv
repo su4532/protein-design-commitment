@@ -1,0 +1,8 @@
+draws,family,seed,unit
+2000,cell variance and commitment,target-derived,roots then children
+5000,pooled commitment,42,structural clusters
+10000,settling-step spread,42,clusters or targets plus saved design draws
+10000,clock remapping,42,same saved spread replicates
+4000,action timing and O/A,17,"clusters, root rotations and saved design draws"
+10000,scoring-noise sensitivity,42,clusters or targets
+20000,shared-order simulations,42,"simulated panels, not a bootstrap"

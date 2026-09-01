@@ -1,0 +1,23 @@
+seed: 42
+output_subdir: results
+capture_steps: [10, 25, 50, 75, 100, 150, 200, 250, 300, 350]
+deployed_steps: [100, 200, 300]
+qualities: [interface_quality, fold_identity, structural_confidence, designability]
+primary_quality: interface_quality
+root_partitions: 10
+root_groups: 3
+panel_bootstrap_draws: 4000
+panel_bootstrap_seed: 17
+design_bootstrap_replicates: 200
+thresholds: [0.25, 0.5, 0.75, 0.9]
+minimum_resolved_fraction: 0.75
+sources:
+  labels: data/action/labels
+  readable_curves: data/action/curves
+  published_readable_gain: data/action/gain_ten_corrected.json
+  paper_commitment_curves: data/capture/per_target
+  paper_commitment_summary: data/capture/pooled.json
+outputs:
+  analysis: results/adaptive_opportunity.json
+  verification: results/verification.json
+  plot_data: results/plot_data.json

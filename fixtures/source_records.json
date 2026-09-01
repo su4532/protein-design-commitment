@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "alias": "capture-core",
+      "role": "search-free capture, nested variance, commitment, readability and transfer",
+      "source_sha256": "5e10d65f7ff36e6839417a8a8a761172061f670b1a48a744dc0ab4f4bbccb763"
+    },
+    {
+      "alias": "action-seven",
+      "role": "three-way action rotation and winner-curse control",
+      "source_sha256": "aa00553c26353e462f80770eaeebc104be1ed11fe28523b666cd9d5ae1f81f4e"
+    },
+    {
+      "alias": "scoring-sensitivity",
+      "role": "scoring-noise correction and continuous fold ruler",
+      "source_sha256": "fb26671101120c017e9cf856dd4592d97c2f6a0d2f9d2fc4e0eda89b06c8c1e6"
+    },
+    {
+      "alias": "capture-grid",
+      "role": "ten-step capture-grid derivation and pooled statistics",
+      "source_sha256": "f59a3ec2cf0608300e94bdf4328a67302f6276b9ede8f729b4c76962aa5897b0"
+    },
+    {
+      "alias": "paper-assembly",
+      "role": "manuscript figure and aggregate table data",
+      "source_sha256": "2057ba9ce1559ab145618c4472b2727d4d12562a165309d32f8388dce284e6d2"
+    },
+    {
+      "alias": "action-ten",
+      "role": "corrected ten-step action timing with comparator reselection",
+      "source_sha256": "91b7e3205244ac27b76d5bdaa2b646d0262ca55d3f93faae4f5a45f429974d3e"
+    },
+    {
+      "alias": "adaptive-selection",
+      "role": "target-adaptive opportunity and threshold sensitivity",
+      "source_sha256": "252a80e61513cf5e23cb9137e56bb93636abfcaade085db5bb5030bbbfd1ec44"
+    }
+  ],
+  "schema_version": 1
+}

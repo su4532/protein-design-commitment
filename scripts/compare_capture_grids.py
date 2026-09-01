@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+"""Command-line wrapper for :mod:`analysis.grid_comparison`."""
+
+import _path  # noqa: F401
+
+from analysis.grid_comparison import main
+
+
+if __name__ == "__main__":
+    result = main()
+    raise SystemExit(result if isinstance(result, int) else 0)

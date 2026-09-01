@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "per_target_analysis.schema.json",
+  "title": "Per-target commitment and readability summary",
+  "type": "object",
+  "required": ["target", "steps"],
+  "properties": {
+    "target": {"type": "string", "minLength": 1},
+    "steps": {
+      "type": "object",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "object",
+          "properties": {
+            "fold_identity": {"$ref": "#/$defs/quality"},
+            "structural_confidence": {"$ref": "#/$defs/quality"},
+            "designability": {"$ref": "#/$defs/quality"},
+            "interface_quality": {"$ref": "#/$defs/quality"}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "quality": {
+      "type": "object",
+      "required": ["decomposition"],
+      "properties": {
+        "decomposition": {
+          "type": "object",
+          "required": ["sigma2_root", "sigma2_child", "sigma2_within", "commitment"],
+          "properties": {
+            "sigma2_root": {"type": "number"},
+            "sigma2_child": {"type": "number"},
+            "sigma2_within": {"type": "number"},
+            "commitment": {"type": "number"}
+          }
+        },
+        "best_readout": {"type": ["object", "null"]}
+      }
+    }
+  }
+}

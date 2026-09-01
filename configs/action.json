@@ -1,0 +1,11 @@
+{
+  "seed": 17,
+  "capture_steps": [10, 25, 50, 75, 100, 150, 200, 250, 300, 350],
+  "deployed_steps": [25, 50, 100, 200, 300],
+  "root_groups": 3,
+  "rotations_per_partition": 6,
+  "selection_objectives": ["J", "O", "A"],
+  "bootstrap_draws": 4000,
+  "comparator_reselected_in_each_draw": true,
+  "primary_independence_unit": "structural_cluster"
+}

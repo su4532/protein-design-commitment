@@ -1,0 +1,6 @@
+condition,distinct_orders_median,distinct_orders_p05,distinct_orders_p95,kendall_w_median,kendall_w_p05,kendall_w_p95,p_w_le_observed
+"shared order, pooled magnitudes",5.0,4.0,7.0,0.6664819944598338,0.5213296398891967,0.7806094182825485,0.0
+"shared order, per-target speed",6.0,4.0,8.0,0.6044321329639889,0.4581717451523546,0.7429362880886426,0.0
+"shared order, each target's own gaps",7.0,5.0,9.0,0.542382271468144,0.37728531855955677,0.6986149584487534,0.0
+"shared order, own gaps, noise-corrected",10.0,7.0,12.0,0.2886426592797784,0.1490304709141274,0.46371191135734074,0.00955
+observed,14,,,0.10360110803324099,,,

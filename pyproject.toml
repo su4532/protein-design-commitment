@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "denoising-dynamics"
+version = "0.1.0"
+description = "Reproducible analysis for denoising-time dynamics in protein design"
+requires-python = ">=3.11"
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "PyYAML>=6,<7",
+  "scikit-learn>=1.4,<2",
+  "scipy>=1.12,<2",
+]
+
+[project.optional-dependencies]
+capture = ["torch>=2.4,<3"]
+
+[tool.setuptools.packages.find]
+include = ["analysis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

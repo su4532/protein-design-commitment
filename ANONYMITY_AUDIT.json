@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "pass",
+  "finding_count": 0,
+  "scope": [
+    "filenames",
+    "text contents",
+    "binary metadata",
+    "notebook metadata",
+    "links and manifests",
+    "archive members",
+    "Git metadata"
+  ],
+  "checks": {
+    "absolute_research_paths": 0,
+    "affiliations": 0,
+    "approval_provenance": 0,
+    "cluster_or_scheduler_identifiers": 0,
+    "experiment_or_job_identifiers": 0,
+    "git_metadata_directories": 0,
+    "identity_names_or_emails": 0,
+    "personal_repository_identifiers": 0,
+    "provenance_timestamps": 0,
+    "tracking_urls": 0
+  },
+  "allowed_public_references": [
+    "https://github.com/NVIDIA-Digital-Bio/proteina-complexa"
+  ],
+  "neutral_git_identity": "Anonymous Authors",
+  "notes": [
+    "The archive contains a fresh-history setup recipe but no Git directory.",
+    "The source-run ledger uses neutral aliases; the private alias map is outside the archive.",
+    "The audit is re-executed by scripts/verify_anonymous_release.py."
+  ]
+}

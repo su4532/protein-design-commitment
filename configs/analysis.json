@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "variance_design": "root_child_completion",
+  "commitment_level": 0.5,
+  "target_independence_unit": "structural_cluster",
+  "probe_outer_folds": 4,
+  "probe_inner_folds": 3,
+  "ridge_alphas": [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0],
+  "bootstrap_draws": {
+    "cell": 2000,
+    "pooled": 5000,
+    "spread": 10000,
+    "order_simulations": 20000
+  },
+  "readout_families": ["linear_activation", "geometry", "mlp"]
+}

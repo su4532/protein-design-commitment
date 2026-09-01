@@ -1,0 +1,17 @@
+interpret,median_step,n_resolved,quality,threshold
+True,36.06738481090264,16,fold_identity,0.25
+True,53.11353646759279,19,fold_identity,0.5
+True,83.736524260612,19,fold_identity,0.75
+True,138.5962162524312,19,fold_identity,0.9
+False,28.754134100365686,9,structural_confidence,0.25
+True,51.715400653785444,16,structural_confidence,0.5
+True,144.74616522829965,19,structural_confidence,0.75
+True,262.4611564838318,19,structural_confidence,0.9
+False,42.90566518523906,12,designability,0.25
+False,70.02827830696486,14,designability,0.5
+True,125.72437326308955,19,designability,0.75
+False,267.86252041042275,11,designability,0.9
+False,48.92820784745977,14,interface_quality,0.25
+True,62.80867660590212,18,interface_quality,0.5
+True,211.95465160538396,18,interface_quality,0.75
+True,282.12103003549356,19,interface_quality,0.9

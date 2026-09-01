@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trajectory_shard.schema.json",
+  "title": "Search-free trajectory capture shard",
+  "type": "object",
+  "required": ["target_name", "capture_step", "root_idx", "child_idx", "metrics", "activations"],
+  "properties": {
+    "target_name": {"type": "string", "minLength": 1},
+    "capture_step": {"type": "integer", "minimum": 0},
+    "root_idx": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+    "child_idx": {"type": "array", "items": {"type": "integer", "minimum": 0}},
+    "metrics": {"type": "object", "additionalProperties": {"type": "array"}},
+    "activations": {
+      "type": "object",
+      "required": ["mean", "max", "interface"],
+      "properties": {
+        "mean": {"type": "array"},
+        "max": {"type": "array"},
+        "interface": {"type": "array"}
+      }
+    }
+  },
+  "description": "Tensor-valued fields are serialized by torch.save in production. The schema states required keys; shape checks live in analysis.cell_analysis."
+}

@@ -1,0 +1,18 @@
+{
+  "capture_steps": [10, 25, 50, 75, 100, 150, 200, 250, 300, 350],
+  "sampler_steps": 400,
+  "roots_per_target": 24,
+  "children_per_root": 4,
+  "completions_per_child": 8,
+  "activation_views": ["binder", "binder_target"],
+  "outcomes": [
+    "fold_identity",
+    "structural_confidence",
+    "designability",
+    "interface_quality"
+  ],
+  "model_dependency": {
+    "repository": "https://github.com/NVIDIA-Digital-Bio/proteina-complexa",
+    "commit": "916eaaedce5b"
+  }
+}
